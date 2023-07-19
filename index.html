@@ -4,36 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <!-- Image import -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <title>SNAP</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(257, 45%, 44%); }
   </style>
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/nav.css">
+  <link rel="stylesheet" href="style/intro.css">
 </head>
 <body>
+  <nav id='main-nav-wrapper'>
+
+    <section id='feature-nav'>
   
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
+      <div id="logo">
+        <img src='./images/logo.svg' />
+      </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#"> Duy Huu Nguyen </a>.
-  </div>
+      <ul class="sub-title-font" id='features'>
+        <li class="feature-tab">Features  </li>
+        <li class="feature-tab">Company  </li>
+        <li>Career</li>
+        <li>About</li>
+      </ul>
+  
+    </section>
+  
+    <ul id='login-nav'>
+
+      <li> <button class="sub-title-font" id="login-button">Login</button></li>
+      <li> <button class="sub-title-font" id="register-button">Register</button></li>
+
+    </ul>
+
+  </nav>
+  
+  <section id="main-body-wrapper">
+
+    <section id = 'intro-wrapper'>
+      
+      <header id= "intro-header">
+        <h1>
+          Make remote work
+        </h1>
+      </header>
+
+      <articile class="sub-title-font" id= "intro-introduction">
+        <p>
+          Get your team in sync, no matter your location. Streamline processes, create team ritual and watch productivity bar.
+        </p>
+      </articile>
+      
+      <footer id= "intro-button">
+        <button>Learn more</button>
+      </footer>
+
+    </section>
+  
+    <section id = 'intro-hero'>
+      <img src="./images/image-hero-desktop.png"/>      
+    </section>
+
+  </section>
 </body>
 </html>

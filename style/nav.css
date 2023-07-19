@@ -1,0 +1,84 @@
+#main-nav-wrapper{
+    box-sizing: border-box;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 30px 40px 0 40px;
+    overflow: hidden;
+}
+
+#feature-nav{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+#logo{
+    margin-right: 40px;
+}
+
+#features{
+    display: flex;
+    flex-direction: row;
+}
+
+#features li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;    
+    margin-right: 40px;
+    white-space: pre;
+}
+
+.feature-tab::after{
+    content: url("../images/icon-arrow-down.svg");
+    white-space: pre;
+}
+
+.feature-tab:hover::after{
+    content: url("../images/icon-arrow-up.svg");
+    white-space: pre;
+}
+
+#features li:hover{
+    cursor: pointer;
+    font-weight: 600;
+    color: rgb(10, 10, 10);
+}
+
+#login-nav{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: inherit;
+    box-sizing: border-box;
+}
+
+#login-button, #register-button{
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+}
+
+#register-button{
+    border: solid rgb(90, 90, 90) 2px;
+    border-radius: 10px;
+    padding: 0px 10px 0px 10px;
+}
+
+#login-button:hover, #register-button:hover{
+    cursor: pointer;
+    color: rgb(10, 10, 10);
+}
+
+#register-button:hover{
+    cursor: pointer;
+    color: rgb(10, 10, 10);
+    border: solid rgb(10, 10, 10) 2px;
+}
