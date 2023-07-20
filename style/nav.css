@@ -6,7 +6,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100vw;
-    padding: 30px 40px 0 40px;
+    padding: 20px 40px 0 40px;
     overflow: hidden;
 }
 
@@ -30,24 +30,29 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;    
-    margin-right: 40px;
+    margin-right: 3vw;
     white-space: pre;
 }
 
 .feature-tab::after{
-    content: url("../images/icon-arrow-down.svg");
+    content: '  ' url("../images/icon-arrow-down.svg");
     white-space: pre;
 }
 
 .feature-tab:hover::after{
-    content: url("../images/icon-arrow-up.svg");
+    content: '  ' url("../images/icon-arrow-up.svg");
     white-space: pre;
 }
 
-#features li:hover{
+#features li:hover, .info-tab:hover, .feature-tab:hover{
     cursor: pointer;
     font-weight: 600;
     color: rgb(10, 10, 10);
+}
+
+.active-tab::after{
+    content: '  ' url("../images/icon-arrow-up.svg");
+    white-space: pre;
 }
 
 #login-nav{
@@ -59,26 +64,146 @@
     box-sizing: border-box;
 }
 
-#login-button, #register-button{
+.login-button, .register-button{
     width: 100px;
     height: 40px;
     background-color: transparent;
     border: none;
 }
 
-#register-button{
+.register-button{
     border: solid rgb(90, 90, 90) 2px;
     border-radius: 10px;
     padding: 0px 10px 0px 10px;
 }
 
-#login-button:hover, #register-button:hover{
+.login-button:hover, .register-button:hover{
     cursor: pointer;
     color: rgb(10, 10, 10);
 }
 
-#register-button:hover{
+.register-button:hover{
     cursor: pointer;
     color: rgb(10, 10, 10);
     border: solid rgb(10, 10, 10) 2px;
 }
+
+#menu-icon {
+    padding-top: 10px;
+    display: none;
+}
+
+#side-nav-wrapper {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    
+    #main-nav-wrapper{
+        padding: 20px 15px 0 15px;
+    }
+
+    #features {
+        display: none;
+    }
+
+    #login-nav {
+        display: none;
+    }
+
+    #menu-icon {
+        display: inline-block;
+    }
+
+    #side-nav-wrapper {
+        position: fixed;
+        display: inline-block;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.453);
+        z-index: 5;
+    }
+
+    #side-nav {
+        position: absolute;
+        flex-direction: column;
+        justify-content: start;
+        box-sizing: border-box;
+        padding: 30px;
+        top:0;
+        right: 0;
+        width: 60vw;
+        height: 100vh;
+        background-color: white;
+        z-index: 5;
+    }
+
+    #side-feature-nav {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #side-feature-nav li {
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+
+    #side-login-nav {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #side-login-nav button{
+        font-size: 17px;
+    }
+
+    #side-nav-register-btn {
+        width: 250px;
+        height: 45px;
+        border-radius: 10px;
+    }
+
+    #side-close-menu {
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        justify-content: right;
+    }
+
+    .side-company-option:hover, .side-feature-option:hover {
+        color: black;
+        cursor: pointer;
+    }
+
+    .side-company-option::before {
+        content: '   ';
+        white-space: pre;
+    }
+
+    #side-feature-todo::before {
+        content: '  ' url('../images/icon-todo.svg') '  ';
+        white-space: pre;
+    }
+
+    #side-feature-cal::before {
+        content: '  ' url('../images/icon-calendar.svg') '  ';
+        white-space: pre;
+    }
+
+    #side-feature-rem::before {
+        content: '  ' url('../images/icon-reminders.svg') '  ';
+        white-space: pre;
+    }
+
+    #side-feature-plan::before {
+        content: '  ' url('../images/icon-planning.svg') '  ';
+        white-space: pre;
+    }
+
+
+} 

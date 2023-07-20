@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'> <!-- displays site properly based on user's device -->
 
   <!-- Image import -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel='icon' type='image/png' sizes='32x32' href='./images/favicon-32x32.png'>
   
   <title>SNAP</title>
 
@@ -14,63 +14,102 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(257, 45%, 44%); }
   </style>
-  <link rel="stylesheet" href="style/main.css">
-  <link rel="stylesheet" href="style/nav.css">
-  <link rel="stylesheet" href="style/intro.css">
+  <link rel='stylesheet' href='style/main.css'>
+  <link rel='stylesheet' href='style/nav.css'>
+  <link rel='stylesheet' href='style/intro.css'>
 </head>
 <body>
+  <section id= 'side-nav-wrapper'>
+    
+    <section id= 'side-nav'>
+      <div id="side-close-menu">
+        <img src="./images/icon-close-menu.svg"/>
+      </div>
+      <ul id="side-feature-nav">
+        <li class='sub-title-font feature-tab'>Features</li>
+          <ul id="side-feature-options">
+            <li class="sub-title-font side-feature-option" id= "side-feature-todo">Todo List</li>
+            <li class="sub-title-font side-feature-option" id= "side-feature-cal">Calendar</li>
+            <li class="sub-title-font side-feature-option" id= "side-feature-rem">Reminder</li>
+            <li class="sub-title-font side-feature-option" id= "side-feature-plan">Planning</li>
+          </ul>
+        <li class='sub-title-font feature-tab'>Company</li>
+          <ul id="side-company-options">
+            <li class="sub-title-font side-company-option">History</li>
+            <li class="sub-title-font side-company-option">Our Team</li>
+            <li class="sub-title-font side-company-option">Team</li>
+          </ul>
+        <li class='sub-title-font info-tab'>Careers</li>
+        <li class='sub-title-font info-tab'>About</li>
+      </ul>
+  
+      <section id="side-login-nav">
+        <button class='sub-title-font login-button'>Login</button>
+        <button class='sub-title-font register-button' id="side-nav-register-btn">Register</button>
+      </section>
+
+    </section>
+  
+  </section>
+
   <nav id='main-nav-wrapper'>
 
     <section id='feature-nav'>
   
-      <div id="logo">
+      <div id='logo'>
         <img src='./images/logo.svg' />
       </div>
   
-      <ul class="sub-title-font" id='features'>
-        <li class="feature-tab">Features  </li>
-        <li class="feature-tab">Company  </li>
-        <li>Career</li>
-        <li>About</li>
+      <ul class='sub-title-font' id='features'>
+        <li class='feature-tab'>Features</li>
+        <li class='feature-tab'>Company</li>
+        <li class= 'info-tab'>Career</li>
+        <li class= 'info-tab'>About</li>
       </ul>
   
     </section>
   
     <ul id='login-nav'>
 
-      <li> <button class="sub-title-font" id="login-button">Login</button></li>
-      <li> <button class="sub-title-font" id="register-button">Register</button></li>
+      <li> <button class='sub-title-font login-button'>Login</button> </li>
+      <li> <button class='sub-title-font register-button'>Register</button> </li>
 
     </ul>
-
+    
+    <div id='menu-icon'>
+      <img alt = 'menu-icon' src='./images/icon-menu.svg'/>
+    </div>
   </nav>
   
-  <section id="main-body-wrapper">
+  <section id='main-body-wrapper'>
 
     <section id = 'intro-wrapper'>
       
-      <header id= "intro-header">
+      <header id= 'intro-header'>
         <h1>
           Make remote work
         </h1>
       </header>
 
-      <articile class="sub-title-font" id= "intro-introduction">
+      <articile class='sub-title-font' id= 'intro-introduction'>
         <p>
           Get your team in sync, no matter your location. Streamline processes, create team ritual and watch productivity bar.
         </p>
       </articile>
       
-      <footer id= "intro-button">
+      <footer id= 'intro-button'>
         <button>Learn more</button>
       </footer>
 
     </section>
   
     <section id = 'intro-hero'>
-      <img src="./images/image-hero-desktop.png"/>      
+      <img id= 'desktop-img' src='./images/image-hero-desktop.png'/>
+      <img id= 'mobile-img' src='./images/image-hero-mobile.png'/>      
     </section>
+    
 
   </section>
+
 </body>
 </html>

@@ -10,7 +10,7 @@ ul,ol{
 body{
     overflow-x: hidden;
     width: 100vmax;
-    background-color: white;
+    height: 100%;
 }
 
 .sub-title-font {
