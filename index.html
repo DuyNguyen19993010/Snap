@@ -2,14 +2,15 @@
 <html lang='en'>
 <head>
   <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'> <!-- displays site properly based on user's device -->
+  <!-- displays site properly based on user's device -->
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
-  <!-- Image import -->
+  <!-- Image-->
   <link rel='icon' type='image/png' sizes='32x32' href='./images/favicon-32x32.png'>
   
   <title>SNAP</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- Stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(257, 45%, 44%); }
@@ -19,6 +20,11 @@
   <link rel='stylesheet' href='style/intro.css'>
 </head>
 <body>
+
+  <ul id= 'floating-options'>
+    
+  </ul>
+
   <section id= 'side-nav-wrapper'>
     
     <section id= 'side-nav'>
@@ -26,14 +32,14 @@
         <img src="./images/icon-close-menu.svg"/>
       </div>
       <ul id="side-feature-nav">
-        <li class='sub-title-font feature-tab'>Features</li>
+        <li id="side-feature-btn" class='sub-title-font feature-tab'>Features</li>
           <ul id="side-feature-options">
             <li class="sub-title-font side-feature-option" id= "side-feature-todo">Todo List</li>
             <li class="sub-title-font side-feature-option" id= "side-feature-cal">Calendar</li>
             <li class="sub-title-font side-feature-option" id= "side-feature-rem">Reminder</li>
             <li class="sub-title-font side-feature-option" id= "side-feature-plan">Planning</li>
           </ul>
-        <li class='sub-title-font feature-tab'>Company</li>
+        <li id="side-company-btn" class='sub-title-font feature-tab'>Company</li>
           <ul id="side-company-options">
             <li class="sub-title-font side-company-option">History</li>
             <li class="sub-title-font side-company-option">Our Team</li>
@@ -61,8 +67,8 @@
       </div>
   
       <ul class='sub-title-font' id='features'>
-        <li class='feature-tab'>Features</li>
-        <li class='feature-tab'>Company</li>
+        <li class='feature-tab' id= 'feature-btn'>Features</li>
+        <li class='feature-tab' id= 'company-btn'>Company</li>
         <li class= 'info-tab'>Career</li>
         <li class= 'info-tab'>About</li>
       </ul>
@@ -112,4 +118,5 @@
   </section>
 
 </body>
+  <script src="./script/main.js"></script> 
 </html>

@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100vmax;
+    width: 100vw;
     box-sizing: border-box;
     padding: 50px 40px 70px 40px;
     overflow: hidden;
@@ -15,6 +15,7 @@
     flex-direction: column;
     justify-content: start;
     width: 45vw;
+    padding-top: 40px;
 }
 
 #intro-header {
@@ -27,13 +28,12 @@
 
 #intro-introduction {
     position: relative;
-    width: 80%;
+    width: 70%;
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 40px;
     word-wrap: break-word;
     word-break: keep-all;
-    word-spacing: 5px;
 }
 
 #intro-button button{
@@ -59,8 +59,8 @@
 #intro-hero {
     position: relative;
     display: inline-block;
-    width: 30vw;
-    height: 80vh;
+    width: 35vw;
+    height: 70vh;
 }
 
 #intro-hero #desktop-img{
